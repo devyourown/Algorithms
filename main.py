@@ -9,6 +9,8 @@ import fence
 import fanmeeting
 #import wildcard
 import jlis
+import pi
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -18,7 +20,8 @@ if __name__ == '__main__':
     #fence.test()
     #fanmeeting.test()
     #wildcard.test()
-    jlis.test()
+    #jlis.test()
+    pi.test()
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
