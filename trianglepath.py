@@ -1,7 +1,8 @@
 cache = []
 N = 0
+triangle = []
 
-def max_path(triangle, y, x):
+def max_path(y, x):
     if y == N-1:
         return triangle[y][x]
     if cache[y][x] != -1:
@@ -15,11 +16,10 @@ def max_path(triangle, y, x):
 
 
 def test():
-    global cache
+    global cache, triangle
     test_case = int(input())
     for t in range(test_case):
         N = int(input())
-        triangle = []
         cache = [[-1 for i in range(N)] for j in range(N)]
         for n in range(N):
             triangle.append(list(map(int, input().split())))
